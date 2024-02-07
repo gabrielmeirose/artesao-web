@@ -1,0 +1,12 @@
+.item-card{
+    max-width: 270px;
+}
+.avatar-img{
+    background-image: url("../../../assets/casa-do-artesao-logo.jpg");
+    background-size: 100%;
+}
+.item-button{
+    max-width: 150px;
+    max-height: 50px;
+
+}

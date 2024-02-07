@@ -1,0 +1,16 @@
+#title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 2px 5px 2px 5px;
+}
+
+#title-text{
+    margin: 10px;
+}
+
+#title-img{
+    background-image: url("../../../assets/casa-do-artesao-logo.jpg");
+    background-size: 100%;
+}
