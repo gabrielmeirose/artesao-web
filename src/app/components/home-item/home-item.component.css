@@ -6,7 +6,18 @@
     background-size: 100%;
 }
 .item-button{
-    max-width: 150px;
+    font-size: small;
+    max-width: 120px;
     max-height: 50px;
 
+}
+
+
+#button-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p{
+    margin: 10px;
 }

@@ -21,7 +21,8 @@ import { MatBadgeModule } from '@angular/material/badge'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
-import { HomeItemComponent } from './components/home-item/home-item.component'
+import { HomeItemComponent } from './components/home-item/home-item.component';
+import { RecomendationComponent } from './components/recomendation/recomendation.component'
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeItemComponent } from './components/home-item/home-item.component'
     HeaderComponent,
     HomeComponent,
     HomeItemComponent,
+    RecomendationComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,10 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
+
 }
 
 #main-body{
-    background-color: bisque;
     margin-left: 5%;
     margin-right: 5%;
     height: 100%;
@@ -23,6 +24,22 @@ body{
     background-size: 100%;
     filter: blur(2px);
     
+}
+
+.sides{
+    height: 100%;
+    width: 5%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(233, 233, 233);
+}
+#left{
+    left: 95%;
+    border-left: 2px solid rgba(158, 158, 158, 0.205);
+}
+#right{
+    border-right: 2px solid rgba(158, 158, 158, 0.205);
 }
 
 #aahome-img-container{

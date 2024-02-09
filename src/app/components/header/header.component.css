@@ -6,6 +6,12 @@
     padding: 2px 5px 2px 5px;
 }
 
+#toolbar{
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
 #title-text{
     margin: 10px;
 }
@@ -13,4 +19,12 @@
 #title-img{
     background-image: url("../../../assets/casa-do-artesao-logo.jpg");
     background-size: 100%;
+}
+
+#header-link{
+    font-size: small;
+}
+
+#about{
+    margin-left: 15px;
 }

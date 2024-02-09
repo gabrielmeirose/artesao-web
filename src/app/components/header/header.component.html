@@ -1,13 +1,45 @@
-<mat-toolbar class="mx-auto border-x justify-between">
+<mat-toolbar id="toolbar" class="mx-auto border-x justify-between">
     <a routerLink="home" id="title">
 
         <button id="title-img" mat-fab color="primary"></button>
         <h1 id="title-text">Casa do Artesão</h1>
 
     </a>
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon [matBadge]="1" matBadgeColor="warn">shopping_cart</mat-icon>
-    </button>
+ 
+    <section>
+        <button mat-icon-button [matMenuTriggerFor]="config">
+            <mat-icon matBadgeColor="warn">settings</mat-icon>
+        </button>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon [matBadge]="1" matBadgeColor="warn">shopping_cart</mat-icon>
+        </button>
+    </section>
+
+    
+
+    <mat-menu #config="matMenu">
+        <div class="p-3 divide-y divide-solid">
+
+            <div class="py-3">
+
+                <div class="flex justify-between font-light mb-2">
+                    <mat-icon matBadgeColor="warn">mail</mat-icon>
+
+                    <a id="about" href="">Contato</a>
+                </div>
+
+                <div class="flex justify-between font-light mb-2">
+                    <mat-icon matBadgeColor="warn">question_mark</mat-icon>
+
+                    <a id="about" href="">Sobre</a>
+                </div>
+            </div>
+        </div>
+    </mat-menu>
+
+    
+
     <mat-menu #menu="matMenu">
         <div class="p-3 divide-y divide-solid">
 
