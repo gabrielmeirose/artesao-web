@@ -13,26 +13,46 @@
         <h1 id="home-title">Casa do Artesão</h1>
     </header>
 
-    <app-recomendation></app-recomendation>
+    
+    <app-grid-container>
 
-    <mat-grid-list cols="4" rowHeight="450px">
-        <mat-grid-tile>
-            <app-home-item></app-home-item>
-        </mat-grid-tile>
+        <app-post></app-post>
 
-        <mat-grid-tile>
-            <app-home-item></app-home-item>
-        </mat-grid-tile>
+    </app-grid-container>
+    
+    <app-grid-container background="accent">
 
-        <mat-grid-tile>
-            <app-home-item></app-home-item>
-        </mat-grid-tile>
+        <app-recomendation>Populares</app-recomendation>
 
-        <mat-grid-tile>
-            <app-home-item></app-home-item>
-        </mat-grid-tile>
+    
+            <mat-grid-list cols="4" rowHeight="450px">
+                <mat-grid-tile>
+                    <app-home-item></app-home-item>
+                </mat-grid-tile>
+        
+                <mat-grid-tile>
+                    <app-home-item></app-home-item>
+                </mat-grid-tile>
+        
+                <mat-grid-tile>
+                    <app-home-item></app-home-item>
+                </mat-grid-tile>
+        
+                <mat-grid-tile>
+                    <app-home-item></app-home-item>
+                </mat-grid-tile>
+        
+            </mat-grid-list>
+    
+    </app-grid-container>
 
-    </mat-grid-list>
+    <app-grid-container background="default">
+
+        
+          
+          
+
+    </app-grid-container>
       
 
 <!--

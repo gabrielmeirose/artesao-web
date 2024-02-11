@@ -101,6 +101,13 @@
           "options": {
             "browserTarget": "store:build"
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "store:build:production"
+          }
         }
       }
     }

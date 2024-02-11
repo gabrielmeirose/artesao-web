@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "artesao-web": {
+      "hosting": {
+        "store": [
+          "casa-do-artesao"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "artesao-web"
+  }
+}

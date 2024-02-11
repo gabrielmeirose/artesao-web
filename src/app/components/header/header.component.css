@@ -7,8 +7,8 @@
 }
 
 #toolbar{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
 
 }
 
@@ -17,7 +17,7 @@
 }
 
 #title-img{
-    background-image: url("../../../assets/casa-do-artesao-logo.jpg");
+    background-image: url("../../../assets/artesao-logo.jpg");
     background-size: 100%;
 }
 

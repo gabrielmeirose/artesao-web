@@ -19,10 +19,19 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatTableModule } from '@angular/material/table'
 import { MatBadgeModule } from '@angular/material/badge'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HomeItemComponent } from './components/home-item/home-item.component';
-import { RecomendationComponent } from './components/recomendation/recomendation.component'
+import { RecomendationComponent } from './components/recomendation/recomendation.component';
+import { GridContainerComponent } from './components/grid-container/grid-container.component';
+import { PostComponent } from './components/post/post.component';
+import { PostChipComponent } from './components/post-chip/post-chip.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getDatabase, provideDatabase } from '@angular/fire/database'
 
 @NgModule({
   declarations: [
@@ -31,6 +40,9 @@ import { RecomendationComponent } from './components/recomendation/recomendation
     HomeComponent,
     HomeItemComponent,
     RecomendationComponent,
+    GridContainerComponent,
+    PostComponent,
+    PostChipComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +50,10 @@ import { RecomendationComponent } from './components/recomendation/recomendation
     BrowserAnimationsModule,
 
     // Angular Material
+
     MatSidenavModule,
+    MatFormFieldModule,
+    MatTabsModule,
     MatGridListModule,
     MatMenuModule,
     MatButtonModule,
@@ -51,6 +66,10 @@ import { RecomendationComponent } from './components/recomendation/recomendation
     MatTableModule,
     MatBadgeModule,
     MatSnackBarModule,
+    provideFirebaseApp(() => initializeApp({"projectId":"artesao-web","appId":"1:715400206147:web:ebf7dad33ed0a1cbdec1f6","storageBucket":"artesao-web.appspot.com","apiKey":"AIzaSyAco8nLUGyjh9pe6KcAK3XWIKRAJgHsqQg","authDomain":"artesao-web.firebaseapp.com","messagingSenderId":"715400206147"})),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideDatabase(() => getDatabase()),
   ],
   providers: [],
   bootstrap: [AppComponent]
