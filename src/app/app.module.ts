@@ -33,6 +33,8 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database'
 
+import { env } from './environments/environment'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +68,14 @@ import { getDatabase, provideDatabase } from '@angular/fire/database'
     MatTableModule,
     MatBadgeModule,
     MatSnackBarModule,
-    provideFirebaseApp(() => initializeApp({"projectId":"artesao-web","appId":"1:715400206147:web:ebf7dad33ed0a1cbdec1f6","storageBucket":"artesao-web.appspot.com","apiKey":"AIzaSyAco8nLUGyjh9pe6KcAK3XWIKRAJgHsqQg","authDomain":"artesao-web.firebaseapp.com","messagingSenderId":"715400206147"})),
+    provideFirebaseApp(() => initializeApp({
+      "projectId":env.projectId,
+      "appId":env.appId,
+      "storageBucket":env.storageBucket,
+      "apiKey":env.apiKey,
+      "authDomain":env.authDomain,
+      "messagingSenderId":env.messagingId
+    })),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideDatabase(() => getDatabase()),
